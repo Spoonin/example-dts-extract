@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.6.0",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@ex/all!",
+  "docComment": "",
+  "name": "@ex/all",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@ex/all!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@ex/all!CONFIG_A:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CONFIG_A = \"ABC\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CONFIG_A",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-export { CONFIG_A } from "./config";
-export { A } from "@ex/liba";
-export { ConcreteUseCase, ConcreteService } from "@ex/libb";
+export * from "@ex/liba";
+export * from "@ex/libb";
+export * from "./utils";
 //# sourceMappingURL=index.d.ts.map

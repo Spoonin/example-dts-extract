@@ -1,4 +1,5 @@
 import { AbstractService } from "./interface";
+export { AbstractService } from "./interface";
 
 export { ConcreteService } from "./service";
 export class ConcreteUseCase{
@@ -11,4 +12,5 @@ export class ConcreteUseCase{
         this.instance.doSmth(x);
     }
 }
+
 

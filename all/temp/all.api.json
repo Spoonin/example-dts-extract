@@ -16,6 +16,328 @@
       "name": "",
       "members": [
         {
+          "kind": "Class",
+          "canonicalReference": "@ex/all!A:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export class A"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "A",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@ex/all!A#do:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "do(x: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") {\n        "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "console.log",
+                  "canonicalReference": "!Console#log"
+                },
+                {
+                  "kind": "Content",
+                  "text": "(`A.do(${"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "x",
+                  "canonicalReference": "@ex/liba!~x"
+                },
+                {
+                  "kind": "Content",
+                  "text": "})`);\n    }"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "x",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "do"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@ex/all!AbstractService:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface AbstractService "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbstractService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@ex/all!AbstractService#doSmth:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "doSmth(x: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "x",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "doSmth"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@ex/all!ConcreteService:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export class ConcreteService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbstractService",
+              "canonicalReference": "@ex/libb!AbstractService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConcreteService",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@ex/all!ConcreteService#doSmth:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "doSmth(x: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "console.log",
+                  "canonicalReference": "!Console#log"
+                },
+                {
+                  "kind": "Content",
+                  "text": "(`Concrete.doSmth(${"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "x",
+                  "canonicalReference": "@ex/libb!~x"
+                },
+                {
+                  "kind": "Content",
+                  "text": "})`);\n    }"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "x",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "doSmth"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@ex/all!ConcreteUseCase:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export class ConcreteUseCase"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConcreteUseCase",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@ex/all!ConcreteUseCase:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ConcreteUseCase` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(private instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbstractService",
+                  "canonicalReference": "@ex/libb!AbstractService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") { }"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@ex/all!ConcreteUseCase#use:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "use(x: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") {\n        this."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "useInternal",
+                  "canonicalReference": "@ex/libb!ConcreteUseCase#useInternal"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "x",
+                  "canonicalReference": "@ex/libb!~x"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");\n    }"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "x",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "use"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
           "kind": "Variable",
           "canonicalReference": "@ex/all!CONFIG_A:var",
           "docComment": "",
@@ -31,6 +353,109 @@
             "startIndex": 0,
             "endIndex": 0
           }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@ex/all!doFunction:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function doFunction(p: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "p",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "doFunction"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@ex/all!SomeUtil:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SomeUtil "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SomeUtil",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@ex/all!SomeUtil#doUtil:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "doUtil(a: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "a",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "doUtil"
+            }
+          ],
+          "implementsTokenRanges": []
         }
       ]
     }

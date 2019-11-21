@@ -4,18 +4,48 @@
 
 ```ts
 
-import { A } from '@ex/liba';
-import { ConcreteService } from '@ex/libb';
-import { ConcreteUseCase } from '@ex/libb';
+// @public (undocumented)
+export class A{
+    // (undocumented)
+    do(x: number) {
+        console.log(`A.do(${x})`);
+    }
+}
 
-export { A }
+// @public (undocumented)
+export interface AbstractService {
+    // (undocumented)
+    doSmth(x: string): void;
+}
 
-export { ConcreteService }
+// @public (undocumented)
+export class ConcreteService implements AbstractService {
+    // (undocumented)
+    doSmth(x: string): void {
+        console.log(`Concrete.doSmth(${x})`);
+    }
+}
 
-export { ConcreteUseCase }
+// @public (undocumented)
+export class ConcreteUseCase{
+    constructor(private instance: AbstractService) { }
+    // (undocumented)
+    use(x: string) {
+        this.useInternal(x);
+    }
+    }
 
 // @public (undocumented)
 export const CONFIG_A = "ABC";
+
+// @public (undocumented)
+export function doFunction(p: string): void;
+
+// @public (undocumented)
+export class SomeUtil {
+    // (undocumented)
+    doUtil(a: string): string;
+}
 
 
 // (No @packageDocumentation comment for this package)
